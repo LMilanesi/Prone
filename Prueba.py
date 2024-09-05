@@ -1,5 +1,6 @@
 import requests
 import json
+import pandas as pd
 from openpyxl import Workbook
 
 # URL base de la API
@@ -35,10 +36,11 @@ else:
     exit()  # Salir si la solicitud falla
 
 # Cargar el JSON desde el archivo
-json_path = r'C:/Users/Lauta/OneDrive/Escritorio/Prone/Propiedades.json'
+json_path = r'C:\Users\renzo\Desktop\Trabajo Prone\Prone\Propiedades.json'
 with open(json_path, 'r', encoding='utf-8') as json_file:
     data = json.load(json_file)
 
+#Renzo C:\Users\renzo\Desktop\Trabajo Prone\Prone
 # Crear un nuevo archivo Excel
 wb = Workbook()
 ws_property = wb.active
@@ -121,7 +123,8 @@ sheets = {
     "location": ["id", "name", "full_location"],
     "producer": ["id", "name", "email", "cellphone"],
     "type": ["id", "name", "code"],
-    "operations": ["operation_id", "property_id", "operation_type", "price", "currency"]
+    "operations": ["operation_id", "property_id", "operation_type", "price", "currency"],
+    "Property Owners": ['Owner ID', 'Owner Name', 'Owner Email', 'Owner Phone', 'Owner Work Email', 'Property ID']
 }
 
 # Crear hojas adicionales si no existen y agregar las cabeceras
@@ -144,6 +147,25 @@ for obj in data.get('objects', []):
             branch_data.get('phone', ''),
             branch_data.get('geo_lat', ''),
             branch_data.get('geo_long', '')
+        ])
+
+    # Property Owners
+    property_id = obj.get('id', '')  # Obtener el ID de la propiedad actual
+    internal_data = obj.get('internal_data', {})
+    property_owners = internal_data.get('property_owners', [])
+
+    for owner in property_owners:
+        # Extraer los detalles de cada propietario
+        owner_id = owner.get('id', '')
+        owner_name = owner.get('name', '')
+        owner_email = owner.get('email', '')
+        owner_phone = owner.get('cellphone', '')
+        owner_work_email = owner.get('work_email', '')
+
+        # Agregar los datos del propietario a la hoja "Property Owners"
+        ws_property_owners = wb["Property Owners"]
+        ws_property_owners.append([
+            owner_id, owner_name, owner_email, owner_phone, owner_work_email, property_id
         ])
 
     # Location
@@ -179,16 +201,11 @@ for obj in data.get('objects', []):
 
     # Operations
     for operation in obj.get('operations', []):
-        operation_id = operation.get('operation_id', '')
-        operation_type = operation.get('operation_type', '')
         for price_info in operation.get('prices', []):
             ws_operations = wb["operations"]
             ws_operations.append([
-                operation_id,
                 obj.get('id', ''),
-                operation_type,
                 price_info.get('price', ''),
-                price_info.get('currency', '')
             ])
 
 # Guardar el archivo Excel
