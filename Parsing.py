@@ -34,12 +34,21 @@ for obj in data.get('objects', []):
 
     # Desanidar los datos de la sucursal (branch)
     branch = obj.get('branch', {})
+    branch_created_date_time = branch.get('created_date', None)
+    
+    # Dividir la fecha y la hora si el campo existe
+    if branch_created_date_time:
+        branch_created_date, branch_created_time = branch_created_date_time.split('T')
+    else:
+        branch_created_date, branch_created_time = None, None
+    
     branch_data = {
         'branch_id': branch.get('id', None),
         'branch_address': branch.get('address', None),
         'branch_alternative_phone': branch.get('alternative_phone', None),
         'branch_alternative_phone_area': branch.get('alternative_phone_area', None),
-        'branch_created_date': branch.get('created_date', None),
+        'branch_created_date': branch_created_date,  # Solo la fecha
+        'branch_created_time': branch_created_time,  # Solo la hora
         'property_id': obj.get('id', None)  # Relacionar con propiedad
     }
     branch_rows.append(branch_data)
