@@ -1,5 +1,6 @@
 import pymysql
 import pandas as pd
+import numpy as np
 
 # Configuración de la conexión a la base de datos
 timeout = 10
@@ -9,7 +10,7 @@ connection = pymysql.connect(
     cursorclass=pymysql.cursors.DictCursor,
     db="defaultdb",
     host="prone-2024-prone-2024.k.aivencloud.com",
-    password= BD_pasword,
+    password= pasword,
     read_timeout=timeout,
     port=11108,
     user="avnadmin",
@@ -45,6 +46,10 @@ try:
 
     for hoja, tabla in hojas_y_tablas.items():
         df = pd.read_excel(file_path, sheet_name=hoja)
+        
+        # Reemplazar NaN por None (que se convierte en NULL en MySQL)
+        df = df.replace({np.nan: None})
+        
         insert_into_table(cursor, tabla, df)
         connection.commit()
         print(f"Datos insertados correctamente en la tabla {tabla}.")
