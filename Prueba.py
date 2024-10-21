@@ -48,7 +48,7 @@ ws_property.title = "Propiedades"
 
 # Definir todas las columnas posibles basadas en la estructura del JSON
 header = [
-    'id', 'address', 'age', 'bathroom_amount', 'created_at', 'description', 'expenses', 
+    'id',"reference_code", 'address', 'age', 'bathroom_amount', 'created_at', 'description', 'expenses', 
     'fake_address', 'geo_lat', 'geo_long', 'is_starred_on_web', 'status', 'situation', 
     'type_id', 'type_name', 'operation_id', 'operation_type', 'price', 'currency', 
     'branch_id', 'branch_name', 'branch_email', 'branch_phone', 'branch_geo_lat', 
@@ -82,6 +82,7 @@ for obj in data.get('objects', []):
     # Escribir los datos en el Excel, truncando donde sea necesario
     row = [
         truncate_string(obj.get('id', ''), MAX_LENGTH_ID),
+        truncate_string(obj.get('reference_code', ''), MAX_LENGTH_DESCRIPTION),
         truncate_string(obj.get('address', ''), MAX_LENGTH_ADDRESS),
         str(obj.get('age', '')),  # Convertir a cadena de texto
         str(obj.get('bathroom_amount', '')),  # Convertir a cadena de texto
