@@ -49,6 +49,7 @@ for obj in data.get('objects', []):
     
     property_data = {
         'property_id': obj.get('id', None),
+        "reference_code" : obj.get('reference_code', None),
         'address': obj.get('address', None),
         'description': obj.get('description', None),
         'created_at_date': created_at_date,  # Solo la fecha
