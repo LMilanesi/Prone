@@ -1,0 +1,265 @@
+[
+    {
+        "address": "Gaboto al 400 Monoambiente al frente con Balcón",
+        "age": 0,
+        "bathroom_amount": 1,
+        "branch": {
+            "address": "Dorrego 1586 1A",
+            "alternative_phone": "5603912",
+            "alternative_phone_area": "341",
+            "alternative_phone_country_code": "+549",
+            "alternative_phone_extension": "",
+            "branch_type": "Internal",
+            "contact_time": "9 a 19",
+            "created_date": "2020-01-23T20:41:03",
+            "display_name": "Prone Servicios Inmobiliarios",
+            "email": "emiliano@prone.com.ar",
+            "geo_lat": "-32.94673281190908",
+            "geo_long": "-60.656733991989135",
+            "gm_location_type": "BY_HAND",
+            "id": 16812,
+            "is_default": false,
+            "logo": "https://static.tokkobroker.com/branch_logos/None/Prone.jpg",
+            "name": "Emiliano Banchio",
+            "pdf_footer_text": "",
+            "phone": "155603912",
+            "phone_area": "0341",
+            "phone_country_code": "",
+            "phone_extension": "",
+            "use_pdf_footer": false
+        },
+        "created_at": "2020-03-16T19:24:10",
+        "custom1": "0.00",
+        "custom_tags": [],
+        "deleted_at": "2020-09-29T16:27:11",
+        "depth_measure": "0.00",
+        "description": "Alquiler Departamento Monoambiente 29m2 totales, ubicados frente a la biblioteca Constancio Vigil.  Unidades completamente eléctricas, incluyen Termo-tanque eléctrico de 30 litros, anafe eléctrico de 2 hornallas, pisos cerámicos, muebles de cocina, aberturas de aluminio tipo Modena, sanitarios Ferrum, y giferia FV,\n\n\nRequisitos:\n2 Garantías Propietarias + 1 Recibo de Sueldo (superior a 35.000$) ó\n1 Garantía Propietaria + 2 Recibos de Sueldos (superiores a 35.000$) ó\n4 Recibos de Sueldos (superiores a 35.000$)\n\nGastos Inquilino\t\t\t\nMes Alquiler\t8.000,00\t(incluye API y TGI)\t\nInformes\t800,00\t\t\nComisión\t14.400,00\t\t\nIVA\t3.024,00\t\t\nSellado\t864,00\tAprox\t\nDepósito En Gtía. Cuota 1\t8.000,00\t\t\nPoliza de seguro\t2.800,00\tAnual Aprox.\t\nGasto Adminitrativo\t\t\t\nTotal Gastos\t37.888,00\t\t\n\n\n\nCorredor Responsable: EMILIANO BANCHIO - MAT. COCIR 1767\nContacto: (0341) 15 5603912\n\n\nCorredor Responsable: EMILIANO BANCHIO - MAT. COCIR 1767",
+        "description_only": "Alquiler Departamento Monoambiente 29m2 totales, ubicados frente a la biblioteca Constancio Vigil.  Unidades completamente eléctricas, incluyen Termo-tanque eléctrico de 30 litros, anafe eléctrico de 2 hornallas, pisos cerámicos, muebles de cocina, aberturas de aluminio tipo Modena, sanitarios Ferrum, y giferia FV,\n\n\nRequisitos:\n2 Garantías Propietarias + 1 Recibo de Sueldo (superior a 35.000$) ó\n1 Garantía Propietaria + 2 Recibos de Sueldos (superiores a 35.000$) ó\n4 Recibos de Sueldos (superiores a 35.000$)\n\nGastos Inquilino\t\t\t\nMes Alquiler\t8.000,00\t(incluye API y TGI)\t\nInformes\t800,00\t\t\nComisión\t14.400,00\t\t\nIVA\t3.024,00\t\t\nSellado\t864,00\tAprox\t\nDepósito En Gtía. Cuota 1\t8.000,00\t\t\nPoliza de seguro\t2.800,00\tAnual Aprox.\t\nGasto Adminitrativo\t\t\t\nTotal Gastos\t37.888,00\t\t\n\n\n\nCorredor Responsable: EMILIANO BANCHIO - MAT. COCIR 1767\nContacto: (0341) 15 5603912\n",
+        "development": null,
+        "development_excel_extra_data": "[]",
+        "disposition": null,
+        "expenses": 0,
+        "extra_attributes": [],
+        "fake_address": "Gaboto al 400 Monoambiente al frente con Balcón",
+        "files": [],
+        "floors_amount": 2,
+        "footer": "Corredor Responsable: EMILIANO BANCHIO - MAT. COCIR 1767",
+        "front_measure": "0.00",
+        "geo_lat": "-32.9751013",
+        "geo_long": "-60.6357261",
+        "gm_location_type": "ROOFTOP",
+        "has_temporary_rent": false,
+        "id": 2410972,
+        "internal_data": {
+            "commission": "",
+            "cotization_users": [],
+            "internal_comments": "",
+            "key_location": "Unknown",
+            "legally_checked": 3,
+            "legally_checked_text": "",
+            "maintenance_user": "",
+            "network_information": "",
+            "producer_comision": "0.00",
+            "property_owners": [
+                {
+                    "birthdate": null,
+                    "cellphone": " 54 9 341 620-5956",
+                    "created_at": "2020-01-31T17:16:20",
+                    "document_number": "",
+                    "email": "tatogaboto@gmail.com",
+                    "id": 14035367,
+                    "name": "Tato Gaboto",
+                    "other_email": "",
+                    "other_phone": "",
+                    "phone": "",
+                    "updated_at": "2024-07-04T17:43:09",
+                    "work_email": "tatogaboto@gmail.com"
+                }
+            ],
+            "transaction_requirements": ""
+        },
+        "is_denounced": false,
+        "is_starred_on_web": false,
+        "legally_checked": "Desconocido",
+        "location": {
+            "divisions": [],
+            "full_location": "Argentina | Santa Fe | Rosario | España y Hospitales",
+            "id": 239347,
+            "name": "España y Hospitales",
+            "parent_division": "/api/v1/location/45746/",
+            "short_location": "Santa Fe | Rosario | España y Hospitales",
+            "state": null,
+            "weight": 233
+        },
+        "occupation": [],
+        "operations": [
+            {
+                "operation_id": 2,
+                "operation_type": "Alquiler",
+                "prices": [
+                    {
+                        "currency": "ARS",
+                        "period": 0,
+                        "price": 8000
+                    }
+                ]
+            }
+        ],
+        "orientation": null,
+        "parking_lot_amount": 0,
+        "photos": [
+            {
+                "description": null,
+                "image": "https://static.tokkobroker.com/water_pics/77617423427968342893537277338830472612873157417674808010520807176162115214094.jpg",
+                "is_blueprint": false,
+                "is_front_cover": true,
+                "order": 0,
+                "original": "https://static.tokkobroker.com/original_pictures/77617423427968342893537277338830472612873157417674808010520807176162115214094.jpg",
+                "thumb": "https://static.tokkobroker.com/thumbs/77617423427968342893537277338830472612873157417674808010520807176162115214094_thumb.jpg"
+            },
+            {
+                "description": null,
+                "image": "https://static.tokkobroker.com/water_pics/21267357640715207903819984937842882335207825200916003533022051157291278418430.jpg",
+                "is_blueprint": false,
+                "is_front_cover": false,
+                "order": 1,
+                "original": "https://static.tokkobroker.com/original_pictures/21267357640715207903819984937842882335207825200916003533022051157291278418430.jpg",
+                "thumb": "https://static.tokkobroker.com/thumbs/21267357640715207903819984937842882335207825200916003533022051157291278418430_thumb.jpg"
+            },
+            {
+                "description": null,
+                "image": "https://static.tokkobroker.com/water_pics/100332774283572279565965253455021332934370443545912781204216099438475650972282.jpg",
+                "is_blueprint": false,
+                "is_front_cover": false,
+                "order": 2,
+                "original": "https://static.tokkobroker.com/original_pictures/100332774283572279565965253455021332934370443545912781204216099438475650972282.jpg",
+                "thumb": "https://static.tokkobroker.com/thumbs/100332774283572279565965253455021332934370443545912781204216099438475650972282_thumb.jpg"
+            },
+            {
+                "description": null,
+                "image": "https://static.tokkobroker.com/water_pics/100806173158070026171756438366097624318321635820773616575312634197896566028875.jpg",
+                "is_blueprint": false,
+                "is_front_cover": false,
+                "order": 3,
+                "original": "https://static.tokkobroker.com/original_pictures/100806173158070026171756438366097624318321635820773616575312634197896566028875.jpg",
+                "thumb": "https://static.tokkobroker.com/thumbs/100806173158070026171756438366097624318321635820773616575312634197896566028875_thumb.jpg"
+            },
+            {
+                "description": null,
+                "image": "https://static.tokkobroker.com/water_pics/105422778240390554512150108965523595870659151877807919130981290741010743424407.jpg",
+                "is_blueprint": false,
+                "is_front_cover": false,
+                "order": 4,
+                "original": "https://static.tokkobroker.com/original_pictures/105422778240390554512150108965523595870659151877807919130981290741010743424407.jpg",
+                "thumb": "https://static.tokkobroker.com/thumbs/105422778240390554512150108965523595870659151877807919130981290741010743424407_thumb.jpg"
+            },
+            {
+                "description": null,
+                "image": "https://static.tokkobroker.com/water_pics/49364800031790129339553275285219537496284998379154150444742114635258698329289.jpg",
+                "is_blueprint": false,
+                "is_front_cover": false,
+                "order": 5,
+                "original": "https://static.tokkobroker.com/original_pictures/49364800031790129339553275285219537496284998379154150444742114635258698329289.jpg",
+                "thumb": "https://static.tokkobroker.com/thumbs/49364800031790129339553275285219537496284998379154150444742114635258698329289_thumb.jpg"
+            },
+            {
+                "description": null,
+                "image": "https://static.tokkobroker.com/water_pics/8768602537125086196519075024939379331786558816186647351123416116301405116880.jpg",
+                "is_blueprint": false,
+                "is_front_cover": false,
+                "order": 6,
+                "original": "https://static.tokkobroker.com/original_pictures/8768602537125086196519075024939379331786558816186647351123416116301405116880.jpg",
+                "thumb": "https://static.tokkobroker.com/thumbs/8768602537125086196519075024939379331786558816186647351123416116301405116880_thumb.jpg"
+            },
+            {
+                "description": null,
+                "image": "https://static.tokkobroker.com/water_pics/29502656542879599910730700890430987515665939592149840178987827289236009172277.jpg",
+                "is_blueprint": false,
+                "is_front_cover": false,
+                "order": 7,
+                "original": "https://static.tokkobroker.com/original_pictures/29502656542879599910730700890430987515665939592149840178987827289236009172277.jpg",
+                "thumb": "https://static.tokkobroker.com/thumbs/29502656542879599910730700890430987515665939592149840178987827289236009172277_thumb.jpg"
+            },
+            {
+                "description": null,
+                "image": "https://static.tokkobroker.com/water_pics/18278434625634396326396861030799108066489390137406899847354300985131341668207.jpg",
+                "is_blueprint": false,
+                "is_front_cover": false,
+                "order": 8,
+                "original": "https://static.tokkobroker.com/original_pictures/18278434625634396326396861030799108066489390137406899847354300985131341668207.jpg",
+                "thumb": "https://static.tokkobroker.com/thumbs/18278434625634396326396861030799108066489390137406899847354300985131341668207_thumb.jpg"
+            },
+            {
+                "description": null,
+                "image": "https://static.tokkobroker.com/water_pics/105460208993055055376049870138487994179761025604327814679147275016606087663212.jpg",
+                "is_blueprint": false,
+                "is_front_cover": false,
+                "order": 9,
+                "original": "https://static.tokkobroker.com/original_pictures/105460208993055055376049870138487994179761025604327814679147275016606087663212.jpg",
+                "thumb": "https://static.tokkobroker.com/thumbs/105460208993055055376049870138487994179761025604327814679147275016606087663212_thumb.jpg"
+            }
+        ],
+        "producer": {
+            "cellphone": "341 5603912",
+            "email": "emiliano@prone.com.ar",
+            "id": 29626,
+            "name": "Emiliano Banchio",
+            "phone": "341 5603912",
+            "picture": "https://static.tokkobroker.com/userprofile/pictures/72037304403938256245105938665774433239412213052031449600848669010301994639983",
+            "position": ""
+        },
+        "property_condition": "---",
+        "public_url": "https://ficha.info/p/ekhmOdhR0e9Uza",
+        "publication_title": "Departamento - España y Hospitales",
+        "real_address": "Gaboto 447",
+        "reference_code": "PAP2410972",
+        "rich_description": "Alquiler Departamento Monoambiente 29m2 totales, ubicados frente a la biblioteca Constancio Vigil.  Unidades completamente eléctricas, incluyen Termo-tanque eléctrico de 30 litros, anafe eléctrico de 2 hornallas, pisos cerámicos, muebles de cocina, aberturas de aluminio tipo Modena, sanitarios Ferrum, y giferia FV,\n\n\nRequisitos:\n2 Garantías Propietarias + 1 Recibo de Sueldo (superior a 35.000$) ó\n1 Garantía Propietaria + 2 Recibos de Sueldos (superiores a 35.000$) ó\n4 Recibos de Sueldos (superiores a 35.000$)\n\nGastos Inquilino\t\t\t\nMes Alquiler\t8.000,00\t(incluye API y TGI)\t\nInformes\t800,00\t\t\nComisión\t14.400,00\t\t\nIVA\t3.024,00\t\t\nSellado\t864,00\tAprox\t\nDepósito En Gtía. Cuota 1\t8.000,00\t\t\nPoliza de seguro\t2.800,00\tAnual Aprox.\t\nGasto Adminitrativo\t\t\t\nTotal Gastos\t37.888,00\t\t\n\n\n\nCorredor Responsable: EMILIANO BANCHIO - MAT. COCIR 1767\nContacto: (0341) 15 5603912\n\n\nCorredor Responsable: EMILIANO BANCHIO - MAT. COCIR 1767",
+        "roofed_surface": "25.00",
+        "room_amount": 1,
+        "semiroofed_surface": "4.00",
+        "situation": "---",
+        "status": 4,
+        "suite_amount": 0,
+        "surface": "0.00",
+        "surface_measurement": "M2",
+        "tags": [
+            {
+                "id": 1,
+                "name": "Agua Corriente",
+                "type": 1
+            },
+            {
+                "id": 4,
+                "name": "Internet",
+                "type": 1
+            },
+            {
+                "id": 5,
+                "name": "Electricidad",
+                "type": 1
+            },
+            {
+                "id": 8,
+                "name": "Cable",
+                "type": 1
+            },
+            {
+                "id": 10,
+                "name": "Balcón",
+                "type": 2
+            }
+        ],
+        "toilet_amount": 0,
+        "total_surface": "29.00",
+        "transaction_requirements": "",
+        "type": {
+            "code": "AP",
+            "id": 2,
+            "name": "Departamento"
+        },
+        "unroofed_surface": "0.00",
+        "videos": [],
+        "web_price": true,
+        "zonification": ""
+    }
+]
