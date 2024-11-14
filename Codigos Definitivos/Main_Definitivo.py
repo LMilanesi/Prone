@@ -94,10 +94,11 @@ for obj in data:
     }
     property_rows.append(property_data)
 
-    # Desanidar los datos de la sucursal (branch)
-    branch = obj.get('branch', {})
-    branch_created_date_time = branch.get('created_date', None)
+   # Desanidar los datos de la sucursal (branch)
+branch = obj.get('branch', None)  # Cambiado a None para validar
 
+if branch is not None:
+    branch_created_date_time = branch.get('created_date', None)
     # Dividir la fecha y la hora si el campo existe
     if branch_created_date_time:
         branch_created_date, branch_created_time = branch_created_date_time.split('T')
