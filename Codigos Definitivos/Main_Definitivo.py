@@ -48,8 +48,6 @@ for obj in data:
         'real_address': obj.get('real_address', None),
         'publication_title': obj.get('publication_title', None),
         'web_price': obj.get('web_price', None),
-
-        # Campos adicionales al final, excluyendo fotos y campos ya cubiertos
         'age': obj.get('age', None),
         'bathroom_amount': obj.get('bathroom_amount', None),
         'custom1': obj.get('custom1', None),
@@ -68,7 +66,7 @@ for obj in data:
         'geo_long': obj.get('geo_long', None),
         'gm_location_type': obj.get('gm_location_type', None),
         'has_temporary_rent': obj.get('has_temporary_rent', None),
-        'internal_data': obj.get('internal_data', None),  # Incluir solo si no tiene fotos
+        'internal_data': obj.get('internal_data', None),
         'is_denounced': obj.get('is_denounced', None),
         'is_starred_on_web': obj.get('is_starred_on_web', None),
         'legally_checked': obj.get('legally_checked', None),
@@ -94,86 +92,82 @@ for obj in data:
     }
     property_rows.append(property_data)
 
-   # Desanidar los datos de la sucursal (branch)
-branch = obj.get('branch', None)  # Cambiado a None para validar
+    # Desanidar los datos de la sucursal (branch)
+    branch = obj.get('branch', None)
+    if branch:
+        branch_created_date_time = branch.get('created_date', None)
+        branch_created_date, branch_created_time = branch_created_date_time.split('T') if branch_created_date_time else (None, None)
 
-if branch is not None:
-    branch_created_date_time = branch.get('created_date', None)
-    # Dividir la fecha y la hora si el campo existe
-    if branch_created_date_time:
-        branch_created_date, branch_created_time = branch_created_date_time.split('T')
-    else:
-        branch_created_date, branch_created_time = None, None
-
-    branch_data = {
-        'property_id': obj.get('id', None),  # Relacionar con propiedad
-        'branch_id': branch.get('id', None),
-        'branch_address': branch.get('address', None),
-        'branch_alternative_phone': branch.get('alternative_phone', None),
-        'branch_alternative_phone_area': branch.get('alternative_phone_area', None),
-        'branch_created_date': branch_created_date,  # Solo la fecha
-        'branch_created_time': branch_created_time,  # Solo la hora
-
-        # Campos adicionales al final
-        'branch_alternative_phone_country_code': branch.get('alternative_phone_country_code', None),
-        'branch_alternative_phone_extension': branch.get('alternative_phone_extension', None),
-        'branch_type': branch.get('branch_type', None),
-        'contact_time': branch.get('contact_time', None),
-        'display_name': branch.get('display_name', None),
-        'email': branch.get('email', None),
-        'geo_lat': branch.get('geo_lat', None),
-        'geo_long': branch.get('geo_long', None),
-        'gm_location_type': branch.get('gm_location_type', None),
-        'is_default': branch.get('is_default', None),
-        'logo': branch.get('logo', None),
-        'name': branch.get('name', None),
-        'pdf_footer_text': branch.get('pdf_footer_text', None),
-        'phone': branch.get('phone', None),
-        'phone_area': branch.get('phone_area', None),
-        'phone_country_code': branch.get('phone_country_code', None),
-        'phone_extension': branch.get('phone_extension', None),
-        'use_pdf_footer': branch.get('use_pdf_footer', None)
-    }
-    branch_rows.append(branch_data)
+        branch_data = {
+            'property_id': obj.get('id', None),
+            'branch_id': branch.get('id', None),
+            'branch_address': branch.get('address', None),
+            'branch_alternative_phone': branch.get('alternative_phone', None),
+            'branch_alternative_phone_area': branch.get('alternative_phone_area', None),
+            'branch_created_date': branch_created_date,
+            'branch_created_time': branch_created_time,
+            'branch_alternative_phone_country_code': branch.get('alternative_phone_country_code', None),
+            'branch_alternative_phone_extension': branch.get('alternative_phone_extension', None),
+            'branch_type': branch.get('branch_type', None),
+            'contact_time': branch.get('contact_time', None),
+            'display_name': branch.get('display_name', None),
+            'email': branch.get('email', None),
+            'geo_lat': branch.get('geo_lat', None),
+            'geo_long': branch.get('geo_long', None),
+            'gm_location_type': branch.get('gm_location_type', None),
+            'is_default': branch.get('is_default', None),
+            'logo': branch.get('logo', None),
+            'name': branch.get('name', None),
+            'pdf_footer_text': branch.get('pdf_footer_text', None),
+            'phone': branch.get('phone', None),
+            'phone_area': branch.get('phone_area', None),
+            'phone_country_code': branch.get('phone_country_code', None),
+            'phone_extension': branch.get('phone_extension', None),
+            'use_pdf_footer': branch.get('use_pdf_footer', None)
+        }
+        branch_rows.append(branch_data)
 
     # Desanidar los datos de la ubicación (location)
-    location = obj.get('location', {})
-    location_data = {
-        'property_id': obj.get('id', None),  # Relacionar con propiedad
-        'location_id': location.get('id', None),
-        'location_name': location.get('name', None),
-        'location_full': location.get('full_location', None),
-        'location_short': location.get('short_location', None),
-        'location_state': location.get('state', None),
-        'location_weight': location.get('weight', None),
-        'location_parent_division': location.get('parent_division', None),
-        'location_divisions': location.get('divisions', [])
-    }
-    location_rows.append(location_data)
+    location = obj.get('location', None)
+    if location:
+        location_data = {
+            'property_id': obj.get('id', None),
+            'location_id': location.get('id', None),
+            'location_name': location.get('name', None),
+            'location_full': location.get('full_location', None),
+            'location_short': location.get('short_location', None),
+            'location_state': location.get('state', None),
+            'location_weight': location.get('weight', None),
+            'location_parent_division': location.get('parent_division', None),
+            'location_divisions': location.get('divisions', [])
+        }
+        location_rows.append(location_data)
 
     # Desanidar datos del productor (producer)
-    producer = obj.get('producer', {})
-    producer_data = {
-        'property_id': obj.get('id', None),  # Relacionar con propiedad
-        'producer_id': producer.get('id', None),
-        'producer_name': producer.get('name', None),
-        'producer_email': producer.get('email', None),
-        'producer_phone': producer.get('phone', None),
-        'producer_cellphone': producer.get('cellphone', None),
-        'producer_position': producer.get('position', None),
-        'producer_picture': producer.get('picture', None)
-    }
-    producer_rows.append(producer_data)
+    producer = obj.get('producer', None)
+    if producer:
+        producer_data = {
+            'property_id': obj.get('id', None),
+            'producer_id': producer.get('id', None),
+            'producer_name': producer.get('name', None),
+            'producer_email': producer.get('email', None),
+            'producer_phone': producer.get('phone', None),
+            'producer_cellphone': producer.get('cellphone', None),
+            'producer_position': producer.get('position', None),
+            'producer_picture': producer.get('picture', None)
+        }
+        producer_rows.append(producer_data)
 
     # Desanidar los datos del tipo de propiedad (type)
-    type_info = obj.get('type', {})
-    type_data = {
-        'property_id': obj.get('id', None) , # Relacionar con propiedad
-        'type_id': type_info.get('id', None),
-        'type_name': type_info.get('name', None),
-        'type_code': type_info.get('code', None)
-    }
-    type_rows.append(type_data)
+    type_info = obj.get('type', None)
+    if type_info:
+        type_data = {
+            'property_id': obj.get('id', None),
+            'type_id': type_info.get('id', None),
+            'type_name': type_info.get('name', None),
+            'type_code': type_info.get('code', None)
+        }
+        type_rows.append(type_data)
 
     # Desanidar las operaciones (operations) y precios
     operations = obj.get('operations', [])
@@ -182,7 +176,7 @@ if branch is not None:
         operation_type = operation.get('operation_type', None)
         for price in operation.get('prices', []):
             operation_data = {
-                'property_id': obj.get('id', None),  # Relacionar con propiedad
+                'property_id': obj.get('id', None),
                 'operation_id': operation_id,
                 'operation_type': operation_type,
                 'price': price.get('price', None),
@@ -195,7 +189,7 @@ if branch is not None:
     property_owners = obj.get('internal_data', {}).get('property_owners', [])
     for owner in property_owners:
         owner_data = {
-            'property_id': obj.get('id', None),  # Relacionar con propiedad
+            'property_id': obj.get('id', None),
             'owner_id': owner.get('id', None),
             'owner_name': owner.get('name', None),
             'owner_email': owner.get('email', None),
